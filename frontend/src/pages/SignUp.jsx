@@ -45,7 +45,7 @@ const SignUp = () => {
           },
         },
       )
-      console.log(response)
+
       const { message, statusCode, sucess, data } = response.data
       if (statusCode < 400 && sucess) {
         toast.success(message)

@@ -40,7 +40,7 @@ const AddBook = () => {
       formData.append('bookImg', image)
     }
     try {
-      const response = await axios.patch(
+      const response = await axios.post(
         'http://localhost:4040/api/v1/admin/add-book',
         formData,
         { withCredentials: true },

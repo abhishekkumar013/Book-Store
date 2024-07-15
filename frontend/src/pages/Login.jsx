@@ -45,7 +45,6 @@ const Login = () => {
         navigate('/')
       } else {
         toast.error(message)
-        console.log(message)
       }
     } catch (error) {
       const errorMessage = error.response?.data?.message || 'Error in Login'
